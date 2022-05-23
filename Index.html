@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="GROUP 234" />
     <title>Simple responsove webpage</title>
-    <link rel="stylesheet" href="Project2 (SHI).Css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
-    /> -->
+    <link rel="stylesheet" href="style.Css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -18,84 +14,94 @@
   </head>
   <body>
     <div id="Header">
-      <input type="checkbox" id="check" />
-      <img src="../Capstone project 1/logo.svg" alt="fylo image" id="logo" />
-      <div id="navigation">
-        <ul>
-          <label id="icon" class="checkbtn">
-            <i class="fa fa-bars"></i>
-          </label>
+      <img src="./img/logo.svg" alt="fylo image" id="logo" />
+      <nav>
+        <button class="mobile-nav-toggle" 
+          area-expanded = "false">
+        </button>
+        <ul class="nav" data-visible = "false">
+          <li><a class="nav-item" href="#">Home</a></li>
+          <li><a class="nav-item" href="#">About us</a></li>
+          <li><a class="nav-item" href="#">Contact</a></li>
+          <li><a class="nav-item" href="#">Sign In</a></li>
         </ul>
-        <a class="nav" href="#">Home</a>
-        <a class="nav" href="#">About us</a>
-        <a class="nav" href="#">Contact</a>
-        <a class="nav" href="#">Sign In</a>
-      </div>
+      </nav>
     </div>
 
     <div id="main">
-      <br />
-
       <form action="" method="post">
         <h2>Fill in your details in the form provided below</h2>
-        <label for="fullname">fullname: </label>
-        <input type="text" name="fullname" id="fname" required value="Joshua" />
-        <br />
-        <br />
-        <br />
+        <div class="form">
+          <div class="form-items">
+            <label for="fullname" class="f-c">fullname: </label>
+            <input type="text" name="fullname" class="f-c" id="full-name" 
+              required value="" 
+              placeholder="first name & last name"
+            />
+          </div>
 
-        <label for="user-name">username: </label>
-        <input type="text" name="fullname" id="user-name" required />
-        <br />
-        <br />
-        <br />
+          <div class="form-items">
+            <label for="user-name" class="f-c">username: </label>
+            <input type="text" name="fullname" class="f-c" id="user-name" 
+              required value=""
+              placeholder="username"
+            />
+          </div>
 
-        <label for="mail">email: </label>
-        <i class="fa fa-envelope-o"></i>
-        <input
-          type="text"
-          name="fullname"
-          id="mail"
-          placeholder="example@mail.com"
-          required
-        />
-        <br />
-        <br />
-        <br />
+          <div class="form-items">
+            <label for="email" class="f-c">email: </label>
+            <input type="text" name="email" class="f-c" id="email"
+              required value=""
+              placeholder="example@mail.com"
+            />
+          </div>
 
-        <label for="phone mumber">phone number: </label>
-        <input type="tel" name="phone number" id="Phone number" required />
-        <br />
-        <br />
-        <br />
+          <div class="form-items">
+            <label for="phone mumber" class="f-c">phone: </label>
+            <input type="tel" name="phone number" class="f-c" id="Phone number"
+              required value=""
+              placeholder="phone number"
+            />
+          </div>
 
-        <label for="password">password: </label>
-        <i class="fa fa-key"></i>
-        <input type="password" name="password" id="password" min="8" required />
-        <i id="hide1" class="fa fa-eye"></i>
-        <i id="hide2" class="fa fa-eye-slash"></i>
-        <br />
-        <br />
-        <br />
+          <div class="form-items">
+            <label for="password" class="f-c">password: </label>
+            <div class="f-c">
+              <input class="f-c" id="password" type="password" name="password"
+                min="8" required value=""
+                placeholder="password"
+              />
+              <i id="pass-1" view="false" class="fa fa-eye-slash"></i>
+            </div>
+          </div>
 
-        <label for="password">confirm password: </label>
-        <i class="fa fa-key"></i>
-        <input type="password" name="password" id="password" min="8" required />
-        <i id="hide1" class="fa fa-eye"></i>
-        <i id="hide2" class="fa fa-eye-slash"></i>
+          <div class="form-items">
+            <label for="password" class="f-c">confirm password: </label>
+            <div class="f-c">
+              <input id="confirm-password" type="password" name="confirm-password" 
+                min="8" required value=""
+                placeholder="confirm pass"
+              />
+              <i id="pass-2" view="false" class="fa fa-eye-slash"></i>
+            </div>
+          </div>
+          
+          <div>
+            <label for="Gender">Gender: </label>
 
-        <br />
-        <br />
-        <br />
+            Male:<input type="radio" name="gender" id="Male" 
+              value="male" />
+            
+            Female<input type="radio" name="gender" id="Female" 
+              value="female" />
+            </p>
+          </div>
 
-        <label for="Gender">Gender: </label><br />
-
-        Male:<input type="radio" name="gender" id="Male" value="male" /><br />
-        Female<input type="radio" name="gender" id="Female" value="female" />
-        <br /><br />
-
-        <input type="submit" class="submit" />
+          <input type="submit" class="submit" />
+        </div>
       </form>
     </div>
+    <!-- js script -->
+    <script src="./script.js"></script>
   </body>
 </html>
