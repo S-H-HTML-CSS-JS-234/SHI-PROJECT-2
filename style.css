@@ -1,11 +1,18 @@
 body {
     background-color: hsl(217, 28%, 15%);
     color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10vh;
 }
 
 #Header {
-    padding: 0;
-    margin-bottom: 5rem;
+    padding-top: .8rem;
+    background-color: rgb(154, 177, 207);
+    height: 4rem;
 }
 
 #logo {
@@ -32,7 +39,7 @@ nav {
     width: 2rem;
     z-index: 9999;
     aspect-ratio: 1;
-    top: 1rem;
+    top: 1.5rem;
     right: 2rem;
 }
 
@@ -46,13 +53,13 @@ nav {
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(2.5rem);
     flex-direction: column;
-    padding: min(30vh, 10rem) min(20vw, 2em);
+    padding: min(30vh, 10rem) min(20vw, 4em);
     transform: translateX(100%);
     margin-top: -.01rem;
 }
 
 .nav[data-visible = "true"]{
-    transform: translateX(15%);
+    transform: translateX(0%);
 }
 
 .nav li{
@@ -64,7 +71,8 @@ nav {
 .nav-item {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: hsl(217, 93%, 29%);
+    text-shadow: .3rem .3rem .15rem rgb(0, 0, 0);
+    color: hsl(0, 0%, 100%);
     box-sizing: border-box;
     font-size: 2em;
     padding: .4em;
@@ -82,17 +90,14 @@ form h2 {
     flex-direction: column;
     gap: 2rem;
     width: 21rem;
-    justify-content: center;
-    align-items: left;
     margin: 0 auto;
 }
 
-.form-items {
+.form-items, .gd {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     font-weight: 500;
     display: flex;
-    justify-content: center;
 }
 
 input {
@@ -123,4 +128,28 @@ input {
     color: white;
     background-color: blue;
     padding: 10px 20px;
+}
+
+footer {
+    background-color: rgb(154, 177, 207);
+    height: 4rem;
+    margin-top: 10rem;
+    text-align: center;
+    padding-top: .01rem;
+}
+
+.mg-0 {
+    margin: 0;
+}
+
+.pd-0 {
+    padding: 0;
+}
+
+.bd {
+    border: 2px solid;
+}
+
+.ta-l {
+    text-align: left;
 }
