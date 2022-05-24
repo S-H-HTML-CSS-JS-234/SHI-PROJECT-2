@@ -1,11 +1,11 @@
 body {
-    background-color: hsl(217, 28%, 15%);
     color: white;
     padding: 0;
     margin: 0;
 }
 
 .content {
+    background-color: hsl(217, 28%, 15%);
     position: relative;
     height: 95vh;
 }
