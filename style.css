@@ -3,10 +3,11 @@ body {
     color: white;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 10vh;
+}
+
+.content {
+    position: relative;
+    height: 95vh;
 }
 
 #Header {
@@ -133,7 +134,7 @@ input {
 footer {
     background-color: rgb(154, 177, 207);
     height: 4rem;
-    margin-top: 10rem;
+    margin-top: 1rem;
     text-align: center;
     padding-top: .01rem;
 }
