@@ -59,7 +59,6 @@ passTwo.addEventListener("click", () => {
 })
 
 const signup = () => {
-    alert("WEBSITE IS UNDER MAINTAINANCE, TRY AGAIN LATER")
 }
 
 handleSubmit = () => {
